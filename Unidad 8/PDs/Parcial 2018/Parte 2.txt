@@ -1,0 +1,85 @@
+Ejercicio 1:
+
+Lenguaje natural: 
+Si ninguno de los dos vértices pasados por parámetro son nulos, entonces retorna el booleano que devuelva la función conectadoA.
+
+Precondiciones:
+	No altera el estado del grafo.
+	Los vértices ingresados deben ser validos.
+	El grafo debe estar bien hecho.
+
+Postcondiciones:
+	En caso de que esten conectados devolverá verdadero, en caso contrario falso.
+Tiempo de ejecución O(n)
+
+Grafo.conectados(u, v de tipo vértices): devuelve un booleano
+Com
+	Si u o v son nulos entonces 	O(1)
+		devolver falso		O(1)
+	fin Si
+	devolver u.conectadoA(v) 	O(n)
+Fin
+
+Lenguaje natural: 
+Setea como visitado al vértice actual, se pregunta si la etiqueta del vértice actual es igual a la etiqueta del vértice ingresado por parámetro, en caso afimartivo devuelve verdadero. En caso contrario itera por todos sus adyacentes al vértice actual (que no esten visitados) y realiza la llamada recursiva.
+			
+Precondiciones:
+	No altera el estado de los vértices.
+	El vértices ingresado debe ser valido.
+
+Postcondiciones:
+	La función devolvera verdadero si el vértice actual es igual al ingresado por parámetro, en caso contrario irá a los demás adyacentes.
+
+Tiempo de ejecución O(n)
+
+Vertice.conectadoA(w de tipo vértice): devuelve un booleano
+Com
+	this.visitado = verdadero					O(1)
+	Si this.getEtiqueta() = w.getEtiqueta() entonces 	O(1)
+		devolver verdadero					O(1)
+	fin Si
+	Para cada ady de w.retornarAdyacentes() hacer		O(n)
+		Si ady.estaVisitado() es falso entonces		O(1)
+			devolver ady.conectadoA(w)			O(1)
+		fin Si				
+	fin Para cada
+
+	devolver falso							O(1)
+Fin
+
+
+Ejercicio 2:
+
+
+Lenguaje natural: La solución al problema es representar a los usuarios con un Grafo No Dirigido donde los vértices representan las personas y las áristas representan la relación entre las personas. 
+Para poder indicar el número de personas que pueden estar a no más de 6 enlaces. Se debe realizar una bea (busqueda en amplitud) donde cada vez que se haga el salto a los adyacentes, sume en uno hasta llegar a 5. Por cada vértice se suma uno para poder devolver la cantidad de personas.
+
+Tiempo de ejecución O(n)
+
+TVertice.contactosAlcanzables(contacto: tipo comparable): devuelve un tipo entero
+Com
+	TVertice ver = buscarVertice(contacto)
+	devolver ver.contactosAlcanzables(0)
+Fin
+
+TVertice.contactosAlcanzables(sumaContactos: tipo entero): devuelve un tipo entero
+Com
+	this.visitado = verdadero
+	Pila C = new Pila()
+	count = 0
+	C.insertar(this)
+	
+	Mientras no C.esVacia() y count < 5 hacer
+		x = C.eliminar()
+		count = count + 1
+		Por Cada vertice y x.getAdyacentes() hacer
+			Si no y.Visitado() entonces
+				y.Visitar()
+				C.insertar(y)
+				sumaContactos = sumaContactos + 1
+			fin Si
+		fin Por Cada
+	fin Mientras
+	devolver sumaContactos
+	Mientras 
+Fin

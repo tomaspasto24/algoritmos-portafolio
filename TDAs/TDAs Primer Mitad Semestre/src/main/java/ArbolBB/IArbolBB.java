@@ -1,0 +1,87 @@
+package ArbolBB;
+
+public interface IArbolBB<T> {
+
+    /**
+     * Inserta un elemento en el arbol. En caso de ya existir un elemento con la
+     * clave indicada en "unElemento", retorna falso.
+     *
+     * @param unElemento Elemento a insertar
+     * @return Exito de la operacián
+     */
+
+    public Tupla<Boolean, Integer> insertar(ElementoAB<T> unElemento);
+
+ 
+
+    /**
+     * Busca un elemento dentro del árbol.
+     *
+     *
+     * @param unaEtiqueta Etiqueta identificadora del elemento a buscar.
+     * .
+     * @return Elemento encontrado. En caso de no encontrarlo, retorna nulo.
+     */
+    public Tupla<ElementoAB<T>, Integer> buscar(Comparable unaEtiqueta);
+
+    /**
+     * Imprime en PreOrden los elementos del árbol, separados por guiones.
+     *
+     * @return String conteniendo el preorden separado por guiones.
+     */
+    public String preOrden();
+
+    /**
+     * Imprime en InOrden los elementos del árbol, separados por guiones.
+     *
+     * @return String conteniendo el preorden separado por guiones.
+     */
+    public String inOrden();
+
+    /**
+     * Imprime en PostOrden los elementos del árbol, separados por guiones.
+     *
+     * @return String conteniendo el preorden separado por guiones.
+     */
+    public String postOrden();
+
+   
+       /**
+     * Elimina un elemento dada una etiqueta.
+     * @param unaEtiqueta 
+     */
+    public void eliminar(Comparable unaEtiqueta);
+
+    public int altura();
+    
+    public int tamanio();
+    
+    public int cantHojas();
+    
+    public int nivelDe(Comparable etiqueta);
+    
+    public Comparable obtenerMenorClave();
+    
+    public Comparable obtenerMayorClave();
+    
+    public Comparable obtenerClaveAnteriorADada(Comparable clave);
+    
+    public Integer cantidadNodosPorAltura(int altura);
+    
+    public void listarHojasConNivel();
+    
+    public boolean verificarSiEsBusqueda();
+
+    public IArbolBB<T> duplicar();
+    
+    public int cantidadDeAristas();
+    
+    public int cantidadDeNodos();
+    
+    public int cantNodosInternosCompletos();
+    
+    public boolean verificarSiEsCompleto();
+    
+    public boolean verificarSiSonHermanos(Comparable elemento1, Comparable elemento2);
+}
+

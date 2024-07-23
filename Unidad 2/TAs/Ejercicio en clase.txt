@@ -1,0 +1,12 @@
+
+Escribir un algoritmo en seudocódigo para calcular factorial:
+
+Caso base: cuando n = 0 devuelve 1. Resto del código multiplica n por la misma llamada del factorial n - 1, 
+siendo n el dato de entrada. 
+Precondición: n >= 0.
+
+public static int factorial(int n):
+	Si n == 0:
+		devolver 1
+	Sino: 
+		devolver n * ( factorial(n-1) )

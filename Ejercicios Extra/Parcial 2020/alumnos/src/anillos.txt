@@ -1,0 +1,57 @@
+Distancia de contacto1
+
+Gary_Sinise
+Mykelti_Williamson
+Sally_Field
+Tom_Hanks
+Distancia de contacto2
+
+Bruce_Willis
+Distancia de contacto3
+
+Elijah_Wood
+Viggo_Mortensen
+Distancia de contacto4
+
+Cate_Blanchett
+Geoffrey_Rush
+Keira_Knightley
+Orlando_Bloom
+Distancia de contacto1
+
+Gary_Sinise
+Mykelti_Williamson
+Sally_Field
+Tom_Hanks
+Distancia de contacto2
+
+Bruce_Willis
+Distancia de contacto3
+
+Elijah_Wood
+Viggo_Mortensen
+Distancia de contacto4
+
+Cate_Blanchett
+Geoffrey_Rush
+Keira_Knightley
+Orlando_Bloom
+Distancia de contacto1
+
+Gary_Sinise
+Mykelti_Williamson
+Sally_Field
+Tom_Hanks
+Distancia de contacto2
+
+Bruce_Willis
+Distancia de contacto3
+
+Elijah_Wood
+Viggo_Mortensen
+Distancia de contacto4
+
+Cate_Blanchett
+Geoffrey_Rush
+Keira_Knightley
+Orlando_Bloom

@@ -1,0 +1,22 @@
+1.
+Lista enlazada:
+	Producto: 4 u 8 bytes
+	Siguiente: 4 u 8
+
+	Nombre: 4 u 8 (*2)
+	ID: 4 u 8 (*2)
+	Precio: 4 bytes
+
+	Total: (36 * N) + 8 bytes
+
+Vector:
+	Producto: 8 + 20
+	(28 * N) + 8
+
+2. y 3.
+Para las operaciones básicas de agregar y reducir stock, los vectores son más eficientes en cuanto a tiempo de ejecución, ya que acceso a un elemento concreto es una operación de tiempo constante, mientras en una lista enlazada es de tiempo lineal.
+En cambio, al incorporar un nuevo producto en un vector, se podría tener que redimensionar en caso de que se llene. En cambio, en una lista enlazada, no hay que redimensionar nada.
+Listar los productos es una operación de tiempo lineal en ambas estructuras de datos.
+
+
+
